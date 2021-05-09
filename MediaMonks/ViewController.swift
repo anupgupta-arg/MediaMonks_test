@@ -11,7 +11,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        
+        let apiCall = TypicodeAPICall();
+        apiCall.getUserPosts(isSuccess: {(isSucess, userPosts) in
+            
+           // self.hideToastAndEnableUserInteraction();
+    
+            guard isSucess && userPosts != nil else{
+                return
+            }
+            print("bookingHistoryDetails from BookingHistoryDetailsVC>>", userPosts!);
+           
+        })
     }
 
 

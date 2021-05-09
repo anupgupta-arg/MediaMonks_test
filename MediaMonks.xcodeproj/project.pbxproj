@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		768524EB26471B890001E0DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768524E926471B890001E0DC /* Main.storyboard */; };
 		768524ED26471B8A0001E0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768524EC26471B8A0001E0DC /* Assets.xcassets */; };
 		768524F026471B8A0001E0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768524EE26471B8A0001E0DC /* LaunchScreen.storyboard */; };
+		768524FF264834500001E0DC /* UsersPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768524FE264834500001E0DC /* UsersPosts.swift */; };
+		768525022648357A0001E0DC /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525012648357A0001E0DC /* Albums.swift */; };
+		76852506264866AA0001E0DC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852505264866AA0001E0DC /* Constant.swift */; };
+		7685250B264868680001E0DC /* TypicodeAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685250A264868680001E0DC /* TypicodeAPICall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		768524EC26471B8A0001E0DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		768524EF26471B8A0001E0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		768524F126471B8A0001E0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768524FE264834500001E0DC /* UsersPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPosts.swift; sourceTree = "<group>"; };
+		768525012648357A0001E0DC /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		76852505264866AA0001E0DC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7685250A264868680001E0DC /* TypicodeAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicodeAPICall.swift; sourceTree = "<group>"; };
 		A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.debug.xcconfig"; sourceTree = "<group>"; };
 		C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.release.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +79,9 @@
 		768524E226471B890001E0DC /* MediaMonks */ = {
 			isa = PBXGroup;
 			children = (
+				768525092648682D0001E0DC /* ApiCalls */,
+				76852504264866840001E0DC /* Constant */,
+				768524FD264834320001E0DC /* Modal */,
 				768524E326471B890001E0DC /* AppDelegate.swift */,
 				768524E526471B890001E0DC /* SceneDelegate.swift */,
 				768524E726471B890001E0DC /* ViewController.swift */,
@@ -82,13 +93,37 @@
 			path = MediaMonks;
 			sourceTree = "<group>";
 		};
+		768524FD264834320001E0DC /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				768524FE264834500001E0DC /* UsersPosts.swift */,
+				768525012648357A0001E0DC /* Albums.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		76852504264866840001E0DC /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				76852505264866AA0001E0DC /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		768525092648682D0001E0DC /* ApiCalls */ = {
+			isa = PBXGroup;
+			children = (
+				7685250A264868680001E0DC /* TypicodeAPICall.swift */,
+			);
+			path = ApiCalls;
+			sourceTree = "<group>";
+		};
 		F4EA8F29B1121B22BEADEC5B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */,
 				C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,9 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768525022648357A0001E0DC /* Albums.swift in Sources */,
+				7685250B264868680001E0DC /* TypicodeAPICall.swift in Sources */,
 				768524E826471B890001E0DC /* ViewController.swift in Sources */,
 				768524E426471B890001E0DC /* AppDelegate.swift in Sources */,
+				768524FF264834500001E0DC /* UsersPosts.swift in Sources */,
 				768524E626471B890001E0DC /* SceneDelegate.swift in Sources */,
+				76852506264866AA0001E0DC /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
