@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - UsersPost
 struct UsersPost: Codable {
-    let userID, id: Int?
-    let title, body: String?
+    let userID, id: Int
+    let title, body: String
 
     enum CodingKeys: String, CodingKey {
         case userID = "userId"

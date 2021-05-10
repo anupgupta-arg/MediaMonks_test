@@ -11,20 +11,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        let apiCall = TypicodeAPICall();
-        apiCall.getUserPosts(isSuccess: {(isSucess, userPosts) in
-            
-           // self.hideToastAndEnableUserInteraction();
-    
-            guard isSucess && userPosts != nil else{
-                return
-            }
-            print("bookingHistoryDetails from BookingHistoryDetailsVC>>", userPosts!);
-           
-        })
+        debugLog();
+//       let apiCall = TypicodeAPICall();
+//        apiCall.getUserPosts(isSuccess: {(isSucess, userPosts) in
+//            
+//           // self.hideToastAndEnableUserInteraction();
+//            
+//            guard isSucess && userPosts != nil else{
+//                return
+//            }
+//            debugLog(object: userPosts!);
+//           // print("userPosts >>", userPosts!);
+//           
+//        })
     }
 
 

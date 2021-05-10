@@ -18,3 +18,11 @@ let USERS    =  "/users"    //10 users
 
 
 
+
+let POSTS_LABEL    = "POSTS"
+let ALBUMS_LABEL   = "ALBUMS"
+let PHOTOS_LABEL   = "PHOTOS"
+let TODOS_LABEL    = "TODOS"
+let USERS_LABEL    = "USERS"
+
+

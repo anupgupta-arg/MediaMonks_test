@@ -18,6 +18,20 @@
 		768525022648357A0001E0DC /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525012648357A0001E0DC /* Albums.swift */; };
 		76852506264866AA0001E0DC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852505264866AA0001E0DC /* Constant.swift */; };
 		7685250B264868680001E0DC /* TypicodeAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685250A264868680001E0DC /* TypicodeAPICall.swift */; };
+		76852511264875230001E0DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852510264875230001E0DC /* Extensions.swift */; };
+		76852515264875CE0001E0DC /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852513264875CE0001E0DC /* Toast.swift */; };
+		76852516264875CE0001E0DC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852514264875CE0001E0DC /* Logger.swift */; };
+		7685252226493E480001E0DC /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685252026493E480001E0DC /* SideMenuTableViewCell.swift */; };
+		7685252326493E480001E0DC /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7685252126493E480001E0DC /* SideMenuTableViewCell.xib */; };
+		7685252626493ED60001E0DC /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685252526493ED60001E0DC /* SideMenuVC.swift */; };
+		768525312649889F0001E0DC /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768525302649889F0001E0DC /* Users.storyboard */; };
+		76852534264988AE0001E0DC /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852533264988AE0001E0DC /* Todos.storyboard */; };
+		76852537264988BF0001E0DC /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852536264988BF0001E0DC /* Photos.storyboard */; };
+		7685253A264988CE0001E0DC /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852539264988CE0001E0DC /* Albums.storyboard */; };
+		7685253D264989150001E0DC /* UsersPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7685253C264989150001E0DC /* UsersPosts.storyboard */; };
+		768525402649893D0001E0DC /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685253F2649893D0001E0DC /* UsersVC.swift */; };
+		768525432649896C0001E0DC /* TodosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525422649896C0001E0DC /* TodosVC.swift */; };
+		7685254626498B1B0001E0DC /* AlbumsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685254526498B1B0001E0DC /* AlbumsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +48,20 @@
 		768525012648357A0001E0DC /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
 		76852505264866AA0001E0DC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7685250A264868680001E0DC /* TypicodeAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicodeAPICall.swift; sourceTree = "<group>"; };
+		76852510264875230001E0DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		76852513264875CE0001E0DC /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		76852514264875CE0001E0DC /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7685252026493E480001E0DC /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		7685252126493E480001E0DC /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		7685252526493ED60001E0DC /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		768525302649889F0001E0DC /* Users.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Users.storyboard; sourceTree = "<group>"; };
+		76852533264988AE0001E0DC /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
+		76852536264988BF0001E0DC /* Photos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photos.storyboard; sourceTree = "<group>"; };
+		76852539264988CE0001E0DC /* Albums.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Albums.storyboard; path = MediaMonks/Photos/Albums.storyboard; sourceTree = SOURCE_ROOT; };
+		7685253C264989150001E0DC /* UsersPosts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersPosts.storyboard; sourceTree = "<group>"; };
+		7685253F2649893D0001E0DC /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		768525422649896C0001E0DC /* TodosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodosVC.swift; path = /Users/anup/Desktop/workStation/interview/MediaMonks/MediaMonks/Todos/TodosVC.swift; sourceTree = "<absolute>"; };
+		7685254526498B1B0001E0DC /* AlbumsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsVC.swift; sourceTree = "<group>"; };
 		A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.debug.xcconfig"; sourceTree = "<group>"; };
 		C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.release.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +107,13 @@
 		768524E226471B890001E0DC /* MediaMonks */ = {
 			isa = PBXGroup;
 			children = (
+				7685252A264986360001E0DC /* UserPosts */,
+				7685252C2649864A0001E0DC /* Albums */,
+				7685252E264986980001E0DC /* Photos */,
+				7685252F264986A20001E0DC /* Todos */,
+				7685252D264986710001E0DC /* Users */,
+				7685251F26493E1D0001E0DC /* SideMenu */,
+				7685250F2648750B0001E0DC /* Extensions */,
 				768525092648682D0001E0DC /* ApiCalls */,
 				76852504264866840001E0DC /* Constant */,
 				768524FD264834320001E0DC /* Modal */,
@@ -116,6 +151,69 @@
 				7685250A264868680001E0DC /* TypicodeAPICall.swift */,
 			);
 			path = ApiCalls;
+			sourceTree = "<group>";
+		};
+		7685250F2648750B0001E0DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76852510264875230001E0DC /* Extensions.swift */,
+				76852513264875CE0001E0DC /* Toast.swift */,
+				76852514264875CE0001E0DC /* Logger.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7685251F26493E1D0001E0DC /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7685252026493E480001E0DC /* SideMenuTableViewCell.swift */,
+				7685252526493ED60001E0DC /* SideMenuVC.swift */,
+				7685252126493E480001E0DC /* SideMenuTableViewCell.xib */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		7685252A264986360001E0DC /* UserPosts */ = {
+			isa = PBXGroup;
+			children = (
+				7685253C264989150001E0DC /* UsersPosts.storyboard */,
+			);
+			path = UserPosts;
+			sourceTree = "<group>";
+		};
+		7685252C2649864A0001E0DC /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				76852539264988CE0001E0DC /* Albums.storyboard */,
+				7685254526498B1B0001E0DC /* AlbumsVC.swift */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		7685252D264986710001E0DC /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				768525302649889F0001E0DC /* Users.storyboard */,
+				7685253F2649893D0001E0DC /* UsersVC.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		7685252E264986980001E0DC /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				76852536264988BF0001E0DC /* Photos.storyboard */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		7685252F264986A20001E0DC /* Todos */ = {
+			isa = PBXGroup;
+			children = (
+				768525422649896C0001E0DC /* TodosVC.swift */,
+				76852533264988AE0001E0DC /* Todos.storyboard */,
+			);
+			path = Todos;
 			sourceTree = "<group>";
 		};
 		F4EA8F29B1121B22BEADEC5B /* Pods */ = {
@@ -186,9 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76852537264988BF0001E0DC /* Photos.storyboard in Resources */,
 				768524F026471B8A0001E0DC /* LaunchScreen.storyboard in Resources */,
+				768525312649889F0001E0DC /* Users.storyboard in Resources */,
+				76852534264988AE0001E0DC /* Todos.storyboard in Resources */,
+				7685253A264988CE0001E0DC /* Albums.storyboard in Resources */,
 				768524ED26471B8A0001E0DC /* Assets.xcassets in Resources */,
 				768524EB26471B890001E0DC /* Main.storyboard in Resources */,
+				7685253D264989150001E0DC /* UsersPosts.storyboard in Resources */,
+				7685252326493E480001E0DC /* SideMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,12 +345,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768525432649896C0001E0DC /* TodosVC.swift in Sources */,
+				76852516264875CE0001E0DC /* Logger.swift in Sources */,
 				768525022648357A0001E0DC /* Albums.swift in Sources */,
 				7685250B264868680001E0DC /* TypicodeAPICall.swift in Sources */,
+				7685252626493ED60001E0DC /* SideMenuVC.swift in Sources */,
 				768524E826471B890001E0DC /* ViewController.swift in Sources */,
+				7685254626498B1B0001E0DC /* AlbumsVC.swift in Sources */,
+				76852511264875230001E0DC /* Extensions.swift in Sources */,
 				768524E426471B890001E0DC /* AppDelegate.swift in Sources */,
 				768524FF264834500001E0DC /* UsersPosts.swift in Sources */,
 				768524E626471B890001E0DC /* SceneDelegate.swift in Sources */,
+				768525402649893D0001E0DC /* UsersVC.swift in Sources */,
+				76852515264875CE0001E0DC /* Toast.swift in Sources */,
+				7685252226493E480001E0DC /* SideMenuTableViewCell.swift in Sources */,
 				76852506264866AA0001E0DC /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -379,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
