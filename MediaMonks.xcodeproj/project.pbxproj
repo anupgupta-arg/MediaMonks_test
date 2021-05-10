@@ -27,11 +27,15 @@
 		768525312649889F0001E0DC /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768525302649889F0001E0DC /* Users.storyboard */; };
 		76852534264988AE0001E0DC /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852533264988AE0001E0DC /* Todos.storyboard */; };
 		76852537264988BF0001E0DC /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852536264988BF0001E0DC /* Photos.storyboard */; };
-		7685253A264988CE0001E0DC /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852539264988CE0001E0DC /* Albums.storyboard */; };
 		7685253D264989150001E0DC /* UsersPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7685253C264989150001E0DC /* UsersPosts.storyboard */; };
 		768525402649893D0001E0DC /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685253F2649893D0001E0DC /* UsersVC.swift */; };
 		768525432649896C0001E0DC /* TodosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525422649896C0001E0DC /* TodosVC.swift */; };
 		7685254626498B1B0001E0DC /* AlbumsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685254526498B1B0001E0DC /* AlbumsVC.swift */; };
+		7685254A2649BBB60001E0DC /* UsersPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525492649BBB60001E0DC /* UsersPostsVC.swift */; };
+		768525512649C4920001E0DC /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525502649C4920001E0DC /* Users.swift */; };
+		7685255B2649C9C80001E0DC /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685255A2649C9C80001E0DC /* UserDetailsVC.swift */; };
+		768525632649D5BD0001E0DC /* UsersPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525612649D5BD0001E0DC /* UsersPostsCell.swift */; };
+		768525642649D5BD0001E0DC /* UsersPostsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 768525622649D5BD0001E0DC /* UsersPostsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,11 +61,15 @@
 		768525302649889F0001E0DC /* Users.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Users.storyboard; sourceTree = "<group>"; };
 		76852533264988AE0001E0DC /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
 		76852536264988BF0001E0DC /* Photos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photos.storyboard; sourceTree = "<group>"; };
-		76852539264988CE0001E0DC /* Albums.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Albums.storyboard; path = MediaMonks/Photos/Albums.storyboard; sourceTree = SOURCE_ROOT; };
 		7685253C264989150001E0DC /* UsersPosts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersPosts.storyboard; sourceTree = "<group>"; };
 		7685253F2649893D0001E0DC /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		768525422649896C0001E0DC /* TodosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodosVC.swift; path = /Users/anup/Desktop/workStation/interview/MediaMonks/MediaMonks/Todos/TodosVC.swift; sourceTree = "<absolute>"; };
 		7685254526498B1B0001E0DC /* AlbumsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsVC.swift; sourceTree = "<group>"; };
+		768525492649BBB60001E0DC /* UsersPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPostsVC.swift; sourceTree = "<group>"; };
+		768525502649C4920001E0DC /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		7685255A2649C9C80001E0DC /* UserDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
+		768525612649D5BD0001E0DC /* UsersPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPostsCell.swift; sourceTree = "<group>"; };
+		768525622649D5BD0001E0DC /* UsersPostsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersPostsCell.xib; sourceTree = "<group>"; };
 		A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.debug.xcconfig"; sourceTree = "<group>"; };
 		C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.release.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +141,7 @@
 			children = (
 				768524FE264834500001E0DC /* UsersPosts.swift */,
 				768525012648357A0001E0DC /* Albums.swift */,
+				768525502649C4920001E0DC /* Users.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -177,6 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				7685253C264989150001E0DC /* UsersPosts.storyboard */,
+				768525492649BBB60001E0DC /* UsersPostsVC.swift */,
+				768525612649D5BD0001E0DC /* UsersPostsCell.swift */,
+				768525622649D5BD0001E0DC /* UsersPostsCell.xib */,
 			);
 			path = UserPosts;
 			sourceTree = "<group>";
@@ -184,7 +196,6 @@
 		7685252C2649864A0001E0DC /* Albums */ = {
 			isa = PBXGroup;
 			children = (
-				76852539264988CE0001E0DC /* Albums.storyboard */,
 				7685254526498B1B0001E0DC /* AlbumsVC.swift */,
 			);
 			path = Albums;
@@ -195,6 +206,7 @@
 			children = (
 				768525302649889F0001E0DC /* Users.storyboard */,
 				7685253F2649893D0001E0DC /* UsersVC.swift */,
+				7685255A2649C9C80001E0DC /* UserDetailsVC.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -288,11 +300,11 @@
 				768524F026471B8A0001E0DC /* LaunchScreen.storyboard in Resources */,
 				768525312649889F0001E0DC /* Users.storyboard in Resources */,
 				76852534264988AE0001E0DC /* Todos.storyboard in Resources */,
-				7685253A264988CE0001E0DC /* Albums.storyboard in Resources */,
 				768524ED26471B8A0001E0DC /* Assets.xcassets in Resources */,
 				768524EB26471B890001E0DC /* Main.storyboard in Resources */,
 				7685253D264989150001E0DC /* UsersPosts.storyboard in Resources */,
 				7685252326493E480001E0DC /* SideMenuTableViewCell.xib in Resources */,
+				768525642649D5BD0001E0DC /* UsersPostsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,16 +358,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				768525432649896C0001E0DC /* TodosVC.swift in Sources */,
+				7685254A2649BBB60001E0DC /* UsersPostsVC.swift in Sources */,
 				76852516264875CE0001E0DC /* Logger.swift in Sources */,
 				768525022648357A0001E0DC /* Albums.swift in Sources */,
 				7685250B264868680001E0DC /* TypicodeAPICall.swift in Sources */,
 				7685252626493ED60001E0DC /* SideMenuVC.swift in Sources */,
+				7685255B2649C9C80001E0DC /* UserDetailsVC.swift in Sources */,
 				768524E826471B890001E0DC /* ViewController.swift in Sources */,
 				7685254626498B1B0001E0DC /* AlbumsVC.swift in Sources */,
 				76852511264875230001E0DC /* Extensions.swift in Sources */,
+				768525512649C4920001E0DC /* Users.swift in Sources */,
 				768524E426471B890001E0DC /* AppDelegate.swift in Sources */,
 				768524FF264834500001E0DC /* UsersPosts.swift in Sources */,
 				768524E626471B890001E0DC /* SceneDelegate.swift in Sources */,
+				768525632649D5BD0001E0DC /* UsersPostsCell.swift in Sources */,
 				768525402649893D0001E0DC /* UsersVC.swift in Sources */,
 				76852515264875CE0001E0DC /* Toast.swift in Sources */,
 				7685252226493E480001E0DC /* SideMenuTableViewCell.swift in Sources */,

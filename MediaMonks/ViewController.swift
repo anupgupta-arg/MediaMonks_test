@@ -13,11 +13,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         debugLog();
 //       let apiCall = TypicodeAPICall();
-//        apiCall.getUserPosts(isSuccess: {(isSucess, userPosts) in
+//        apiCall.getUserPosts(isSuccess: {(isSuccess, userPosts) in
 //            
 //           // self.hideToastAndEnableUserInteraction();
 //            
-//            guard isSucess && userPosts != nil else{
+//            guard isSuccess && userPosts != nil else{
 //                return
 //            }
 //            debugLog(object: userPosts!);

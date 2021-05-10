@@ -26,7 +26,7 @@ override func viewDidLoad() {
 
 extension SideMenuVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4;
+        return 5;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,11 +36,11 @@ extension SideMenuVC : UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            menuLabelName = POSTS_LABEL
+            menuLabelName = ALBUMS_LABEL
             print("0")
             
         case 1:
-            menuLabelName = ALBUMS_LABEL
+            menuLabelName = POSTS_LABEL
             print("1")
             
         case 2:
@@ -69,13 +69,13 @@ extension SideMenuVC : UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
            dismiss(animated: true, completion: nil)
-           print("0: POSTS_LABEL")
+           print("0: ALBUMS_LABEL")
         case 1:
-            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil);
-            let vc = storyBoard.instantiateViewController(identifier: "AlbumsVCID");
+            let storyBoard = UIStoryboard.init(name: "UsersPosts", bundle: nil);
+            let vc = storyBoard.instantiateViewController(identifier: "UsersPostsVCID");
             navigationController?.pushViewController(vc, animated: true);
             
-            print("1: ALBUMS_LABEL")
+            print("1: POSTS_LABEL ")
             dismiss(animated: true, completion: nil)
         case 2:
             let storyBoard = UIStoryboard.init(name: "Photos", bundle: nil);

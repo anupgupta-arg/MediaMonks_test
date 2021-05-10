@@ -17,6 +17,7 @@ class AlbumsVC: UIViewController {
         super.viewDidLoad()
         albumTable.dataSource = self;
         albumTable.delegate = self;
+        
         getAlbums();
     }
     
@@ -32,13 +33,10 @@ extension AlbumsVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = albumTable.dequeueReusableCell(withIdentifier: "AlbumsCellID")
-//        guard cell != nil else {
-//            return
-//        }
         
         let album = albums![indexPath.row]
+        cell?.textLabel?.numberOfLines = 3;
         cell?.textLabel?.text = album.title;
-        
         
         return cell!;
     }
@@ -46,25 +44,20 @@ extension AlbumsVC : UITableViewDelegate, UITableViewDataSource {
     
 }
 
-
-
-
 // API call
 extension AlbumsVC {
-    
-    
     fileprivate func getAlbums(){
-        
+        showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
-        apiCall.getAlbums(isSuccess: { [self](isSucess, albumList) in
+        apiCall.getAlbums(isSuccess: { [self](isSuccess, albumList) in
             
-            // self.hideToastAndEnableUserInteraction();
-            guard isSucess && albumList != nil else{
+            hideToastAndEnableUserInteraction();
+            guard isSuccess && albumList != nil else{
                 return
             }
             albums = albumList;
             albumTable.reloadData();
-            debugLog(object: albumList!);
+            //debugLog(object: albumList!);
             // print("userPosts >>", userPosts!);
             
         })
