@@ -30,7 +30,14 @@ class UserDetailsVC: UIViewController {
         
     }
     
-
+    @IBAction func todosbuttonAction(_ sender: Any) {
+        
+        let storyBoard = UIStoryboard.init(name: "Todos", bundle: nil);
+        let vc = storyBoard.instantiateViewController(identifier: "TodosVCID") as TodosVC
+        vc.id = user?.id;
+        navigationController?.pushViewController(vc, animated: true);
+    }
+    
     
 
 }

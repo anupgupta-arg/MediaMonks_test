@@ -122,6 +122,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWg-QF-W4R">
                                                 <rect key="frame" x="5" y="5" width="123" height="40"/>
                                                 <state key="normal" title="Todos"/>
+                                                <connections>
+                                                    <action selector="todosbuttonAction:" destination="NDx-Xn-SM3" eventType="touchUpInside" id="sdf-xB-GVo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

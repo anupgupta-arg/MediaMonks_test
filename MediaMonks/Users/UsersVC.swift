@@ -77,9 +77,6 @@ extension UsersVC {
             guard isSuccess && userPosts != nil else{
                 return
             }
-            
-            
-            
         }
         
     }

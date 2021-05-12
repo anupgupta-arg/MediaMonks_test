@@ -204,8 +204,8 @@ class TypicodeAPICall {
         }
     }
     
-    func getTodos(isSuccess: @escaping (Bool, UsersPosts?) -> ()) {
-        let url = BASE_URL + POSTS;
+    func getTodos(userid : Int, isSuccess: @escaping (Bool, Todos?) -> ()) {
+        let url = BASE_URL + TODOS + "/?userId=\(userid)";
         
         let manager = Alamofire.Session.default
         manager.session.configuration.timeoutIntervalForRequest = 30.0
@@ -221,9 +221,9 @@ class TypicodeAPICall {
                     
                     do {
                         let decoder = JSONDecoder();
-                        let usersPost = try decoder.decode(UsersPosts.self, from: data);
+                        let todos = try decoder.decode(Todos.self, from: data);
                         // print("UsersPost >> ",usersPost);
-                        isSuccess(true, usersPost)
+                        isSuccess(true, todos)
                     }catch let error{
                         
                         print("ERRROR >>", error);

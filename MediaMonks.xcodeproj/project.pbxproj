@@ -40,6 +40,8 @@
 		7685256A264C487D0001E0DC /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852569264C487D0001E0DC /* CommentsVC.swift */; };
 		7685256E264C5D9A0001E0DC /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685256C264C5D9A0001E0DC /* CommentsCell.swift */; };
 		7685256F264C5D9A0001E0DC /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7685256D264C5D9A0001E0DC /* CommentsCell.xib */; };
+		76852573264C66850001E0DC /* TodosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852571264C66850001E0DC /* TodosCell.swift */; };
+		76852578264C6DB00001E0DC /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852577264C6DB00001E0DC /* Todos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		76852569264C487D0001E0DC /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
 		7685256C264C5D9A0001E0DC /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
 		7685256D264C5D9A0001E0DC /* CommentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
+		76852571264C66850001E0DC /* TodosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosCell.swift; sourceTree = "<group>"; };
+		76852577264C6DB00001E0DC /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
 		A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.debug.xcconfig"; sourceTree = "<group>"; };
 		C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.release.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 				76852566264C44990001E0DC /* Comments.swift */,
 				768525012648357A0001E0DC /* Albums.swift */,
 				768525502649C4920001E0DC /* Users.swift */,
+				76852577264C6DB00001E0DC /* Todos.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				768525422649896C0001E0DC /* TodosVC.swift */,
+				76852571264C66850001E0DC /* TodosCell.swift */,
 				76852533264988AE0001E0DC /* Todos.storyboard */,
 			);
 			path = Todos;
@@ -390,8 +396,10 @@
 				7685256E264C5D9A0001E0DC /* CommentsCell.swift in Sources */,
 				768525402649893D0001E0DC /* UsersVC.swift in Sources */,
 				76852515264875CE0001E0DC /* Toast.swift in Sources */,
+				76852573264C66850001E0DC /* TodosCell.swift in Sources */,
 				7685252226493E480001E0DC /* SideMenuTableViewCell.swift in Sources */,
 				76852506264866AA0001E0DC /* Constant.swift in Sources */,
+				76852578264C6DB00001E0DC /* Todos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
