@@ -10,13 +10,15 @@ import Foundation
 // MARK:- URLS
 
 let BASE_URL =  "https://jsonplaceholder.typicode.com"
+
+let USERS    =  "/users"    //10 users
 let POSTS    =  "/posts"    // 100 posts
+let COMMENTS =  "/comments" // 500 comments
+
 let ALBUMS   =  "/albums"   // 500 comments
 let PHOTOS   =  "/photos"   //5000 photos
+
 let TODOS    =  "/todos"    // 200 todos
-let USERS    =  "/users"    //10 users
-
-
 
 
 let POSTS_LABEL    = "POSTS"

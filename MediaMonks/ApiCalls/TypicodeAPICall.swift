@@ -54,7 +54,7 @@ class TypicodeAPICall {
         manager.session.configuration.timeoutIntervalForRequest = 30.0
         manager.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default).response {
             response in
-            print("response.response",response.response!);
+           // print("response.response",response.response!);
             
             switch response.result {
             
@@ -67,6 +67,46 @@ class TypicodeAPICall {
                         let usersPost = try decoder.decode(UsersPosts.self, from: data);
                         // print("UsersPost >> ",usersPost);
                         isSuccess(true, usersPost)
+                    }catch let error{
+                        
+                        print("ERRROR >>", error);
+                        isSuccess(false, nil)
+                    }
+                }
+                else{
+                    isSuccess(false, nil)
+                }
+                
+            case .failure:
+                print("Failure");
+                isSuccess(false, nil)
+                
+            }
+            
+        }
+    }
+    
+    
+    func getComments(postid: Int, isSuccess: @escaping (Bool, Comments?) -> ()) {
+        let url = BASE_URL + COMMENTS + "/?postId=\(postid)";
+        
+        let manager = Alamofire.Session.default
+        manager.session.configuration.timeoutIntervalForRequest = 30.0
+        manager.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default).response {
+            response in
+            //print("response.response",response.response!);
+            
+            switch response.result {
+            
+            case .success :
+                print("Success");
+                if response.response?.statusCode == 200, let data = response.data {
+                    
+                    do {
+                        let decoder = JSONDecoder();
+                        let comments = try decoder.decode(Comments.self, from: data);
+                         print("comments >> ",comments);
+                        isSuccess(true, comments)
                     }catch let error{
                         
                         print("ERRROR >>", error);

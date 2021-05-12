@@ -36,6 +36,10 @@
 		7685255B2649C9C80001E0DC /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685255A2649C9C80001E0DC /* UserDetailsVC.swift */; };
 		768525632649D5BD0001E0DC /* UsersPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525612649D5BD0001E0DC /* UsersPostsCell.swift */; };
 		768525642649D5BD0001E0DC /* UsersPostsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 768525622649D5BD0001E0DC /* UsersPostsCell.xib */; };
+		76852567264C44990001E0DC /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852566264C44990001E0DC /* Comments.swift */; };
+		7685256A264C487D0001E0DC /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852569264C487D0001E0DC /* CommentsVC.swift */; };
+		7685256E264C5D9A0001E0DC /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685256C264C5D9A0001E0DC /* CommentsCell.swift */; };
+		7685256F264C5D9A0001E0DC /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7685256D264C5D9A0001E0DC /* CommentsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		7685255A2649C9C80001E0DC /* UserDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
 		768525612649D5BD0001E0DC /* UsersPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPostsCell.swift; sourceTree = "<group>"; };
 		768525622649D5BD0001E0DC /* UsersPostsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersPostsCell.xib; sourceTree = "<group>"; };
+		76852566264C44990001E0DC /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		76852569264C487D0001E0DC /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		7685256C264C5D9A0001E0DC /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		7685256D264C5D9A0001E0DC /* CommentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
 		A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.debug.xcconfig"; sourceTree = "<group>"; };
 		C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.release.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				768524FE264834500001E0DC /* UsersPosts.swift */,
+				76852566264C44990001E0DC /* Comments.swift */,
 				768525012648357A0001E0DC /* Albums.swift */,
 				768525502649C4920001E0DC /* Users.swift */,
 			);
@@ -189,6 +198,9 @@
 				768525492649BBB60001E0DC /* UsersPostsVC.swift */,
 				768525612649D5BD0001E0DC /* UsersPostsCell.swift */,
 				768525622649D5BD0001E0DC /* UsersPostsCell.xib */,
+				76852569264C487D0001E0DC /* CommentsVC.swift */,
+				7685256C264C5D9A0001E0DC /* CommentsCell.swift */,
+				7685256D264C5D9A0001E0DC /* CommentsCell.xib */,
 			);
 			path = UserPosts;
 			sourceTree = "<group>";
@@ -305,6 +317,7 @@
 				7685253D264989150001E0DC /* UsersPosts.storyboard in Resources */,
 				7685252326493E480001E0DC /* SideMenuTableViewCell.xib in Resources */,
 				768525642649D5BD0001E0DC /* UsersPostsCell.xib in Resources */,
+				7685256F264C5D9A0001E0DC /* CommentsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,16 +375,19 @@
 				76852516264875CE0001E0DC /* Logger.swift in Sources */,
 				768525022648357A0001E0DC /* Albums.swift in Sources */,
 				7685250B264868680001E0DC /* TypicodeAPICall.swift in Sources */,
+				7685256A264C487D0001E0DC /* CommentsVC.swift in Sources */,
 				7685252626493ED60001E0DC /* SideMenuVC.swift in Sources */,
 				7685255B2649C9C80001E0DC /* UserDetailsVC.swift in Sources */,
 				768524E826471B890001E0DC /* ViewController.swift in Sources */,
 				7685254626498B1B0001E0DC /* AlbumsVC.swift in Sources */,
 				76852511264875230001E0DC /* Extensions.swift in Sources */,
 				768525512649C4920001E0DC /* Users.swift in Sources */,
+				76852567264C44990001E0DC /* Comments.swift in Sources */,
 				768524E426471B890001E0DC /* AppDelegate.swift in Sources */,
 				768524FF264834500001E0DC /* UsersPosts.swift in Sources */,
 				768524E626471B890001E0DC /* SceneDelegate.swift in Sources */,
 				768525632649D5BD0001E0DC /* UsersPostsCell.swift in Sources */,
+				7685256E264C5D9A0001E0DC /* CommentsCell.swift in Sources */,
 				768525402649893D0001E0DC /* UsersVC.swift in Sources */,
 				76852515264875CE0001E0DC /* Toast.swift in Sources */,
 				7685252226493E480001E0DC /* SideMenuTableViewCell.swift in Sources */,

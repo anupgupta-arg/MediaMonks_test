@@ -43,7 +43,31 @@ extension UsersPostsVC : UITableViewDelegate, UITableViewDataSource{
         return cell!;
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let post = usersPosts![indexPath.row];
+        moveToComments(post: post)
+
+    }
     
+    
+    
+}
+
+// Navigation
+extension UsersPostsVC {
+    
+    fileprivate func moveToComments(post : UsersPost){
+        
+        let storyboard = UIStoryboard.init(name: "UsersPosts", bundle: nil);
+        let vc = storyboard.instantiateViewController(identifier: "CommentsVCID") as CommentsVC
+        vc.post = post
+        navigationController?.pushViewController(vc, animated: true);
+        
+       
+        
+        
+    }
 }
 
 
