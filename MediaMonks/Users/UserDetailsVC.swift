@@ -30,6 +30,13 @@ class UserDetailsVC: UIViewController {
         
     }
     
+    @IBAction func albumsButtonAction(_ sender: Any) {
+        let storyBoard = UIStoryboard.init(name: "Albums", bundle: nil);
+        let vc = storyBoard.instantiateViewController(identifier: "AlbumsVCID") as AlbumsVC
+        vc.id = user?.id;
+        navigationController?.pushViewController(vc, animated: true);
+    }
+    
     @IBAction func todosbuttonAction(_ sender: Any) {
         
         let storyBoard = UIStoryboard.init(name: "Todos", bundle: nil);
@@ -37,6 +44,7 @@ class UserDetailsVC: UIViewController {
         vc.id = user?.id;
         navigationController?.pushViewController(vc, animated: true);
     }
+    
     
     
 

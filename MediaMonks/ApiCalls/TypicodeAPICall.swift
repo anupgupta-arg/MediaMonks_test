@@ -126,8 +126,8 @@ class TypicodeAPICall {
         }
     }
     
-    func getAlbums(isSuccess: @escaping (Bool, Albums?) -> ()) {
-        let url = BASE_URL + ALBUMS;
+    func getAlbums(userid : Int, isSuccess: @escaping (Bool, Albums?) -> ()) {
+        let url = BASE_URL + ALBUMS + "/?userId=\(userid)";
         
         let manager = Alamofire.Session.default
         manager.session.configuration.timeoutIntervalForRequest = 30.0

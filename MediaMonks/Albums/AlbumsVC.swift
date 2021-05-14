@@ -12,13 +12,13 @@ class AlbumsVC: UIViewController {
     @IBOutlet var albumTable: UITableView!
     
     var albums : Albums?
-    
+    var id : Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         albumTable.dataSource = self;
         albumTable.delegate = self;
         
-        getAlbums();
+        getAlbums(id: id!);
     }
     
 
@@ -46,10 +46,10 @@ extension AlbumsVC : UITableViewDelegate, UITableViewDataSource {
 
 // API call
 extension AlbumsVC {
-    fileprivate func getAlbums(){
+    fileprivate func getAlbums(id : Int){
         showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
-        apiCall.getAlbums(isSuccess: { [self](isSuccess, albumList) in
+        apiCall.getAlbums(userid: id, isSuccess: { [self](isSuccess, albumList) in
             
             hideToastAndEnableUserInteraction();
             guard isSuccess && albumList != nil else{

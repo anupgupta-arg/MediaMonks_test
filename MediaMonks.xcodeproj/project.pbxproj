@@ -42,6 +42,7 @@
 		7685256F264C5D9A0001E0DC /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7685256D264C5D9A0001E0DC /* CommentsCell.xib */; };
 		76852573264C66850001E0DC /* TodosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852571264C66850001E0DC /* TodosCell.swift */; };
 		76852578264C6DB00001E0DC /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852577264C6DB00001E0DC /* Todos.swift */; };
+		76E2B54E264F15DA007FE8E5 /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E2B54D264F15DA007FE8E5 /* Albums.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		7685256D264C5D9A0001E0DC /* CommentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
 		76852571264C66850001E0DC /* TodosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosCell.swift; sourceTree = "<group>"; };
 		76852577264C6DB00001E0DC /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
+		76E2B54D264F15DA007FE8E5 /* Albums.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Albums.storyboard; sourceTree = "<group>"; };
 		A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.debug.xcconfig"; sourceTree = "<group>"; };
 		C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.release.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				7685254526498B1B0001E0DC /* AlbumsVC.swift */,
+				76E2B54D264F15DA007FE8E5 /* Albums.storyboard */,
 			);
 			path = Albums;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				768524EB26471B890001E0DC /* Main.storyboard in Resources */,
 				7685253D264989150001E0DC /* UsersPosts.storyboard in Resources */,
 				7685252326493E480001E0DC /* SideMenuTableViewCell.xib in Resources */,
+				76E2B54E264F15DA007FE8E5 /* Albums.storyboard in Resources */,
 				768525642649D5BD0001E0DC /* UsersPostsCell.xib in Resources */,
 				7685256F264C5D9A0001E0DC /* CommentsCell.xib in Resources */,
 			);
