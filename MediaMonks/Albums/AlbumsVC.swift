@@ -41,7 +41,23 @@ extension AlbumsVC : UITableViewDelegate, UITableViewDataSource {
         return cell!;
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let album = albums![indexPath.row]
+        moveToPhotos(id: album.id!)
+        
+    }
     
+    
+}
+
+extension AlbumsVC {
+    fileprivate func moveToPhotos(id : Int){
+        
+        let storyBoard = UIStoryboard.init(name: "Albums", bundle: nil);
+        let vc = storyBoard.instantiateViewController(identifier: "PhotosVCID") as! PhotosVC
+        vc.id = id;
+        navigationController?.pushViewController(vc, animated: true);
+    }
 }
 
 // API call

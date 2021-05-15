@@ -64,7 +64,7 @@ extension TodosVC {
             }
             todos = todoList;
             todosTableView.reloadData();
-            debugLog(object: todos!);
+          //  debugLog(object: todos!);
             // print("userPosts >>", userPosts!);
 
         })

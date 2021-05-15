@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        debugLog();
+      //  debugLog();
 //       let apiCall = TypicodeAPICall();
 //        apiCall.getUserPosts(isSuccess: {(isSuccess, userPosts) in
 //            

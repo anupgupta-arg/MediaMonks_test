@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,6 +64,71 @@
             </objects>
             <point key="canvasLocation" x="1942.0289855072465" y="71.651785714285708"/>
         </scene>
+        <!--PhotosVC-->
+        <scene sceneID="UuQ-cn-DBK">
+            <objects>
+                <viewController storyboardIdentifier="PhotosVCID" id="ux6-8L-uLT" customClass="PhotosVC" customModule="MediaMonks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xA7-hq-3C6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FyW-Wf-Qyp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="upo-Lq-mKF">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotosCellID" id="Zmk-7a-Xcb" customClass="PhotosCell" customModule="MediaMonks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fxn-Wd-60a">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aka-wQ-ke7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Aka-wQ-ke7" secondAttribute="trailing" id="IHC-4U-Akn"/>
+                                                <constraint firstItem="Aka-wQ-ke7" firstAttribute="leading" secondItem="fxn-Wd-60a" secondAttribute="leading" id="LEQ-Zi-can"/>
+                                                <constraint firstAttribute="bottom" secondItem="Aka-wQ-ke7" secondAttribute="bottom" id="TZL-zu-KK6"/>
+                                                <constraint firstItem="Aka-wQ-ke7" firstAttribute="top" secondItem="fxn-Wd-60a" secondAttribute="top" id="iWS-t9-CIR"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="PhotosImageView" destination="Aka-wQ-ke7" id="1dr-LN-GA6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ux6-8L-uLT" id="Qsr-sT-gzr"/>
+                                    <outlet property="delegate" destination="ux6-8L-uLT" id="AC7-HA-Jh1"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oAp-K2-w4S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FyW-Wf-Qyp" firstAttribute="top" secondItem="oAp-K2-w4S" secondAttribute="top" id="0Mr-B5-Wsm"/>
+                            <constraint firstItem="FyW-Wf-Qyp" firstAttribute="leading" secondItem="oAp-K2-w4S" secondAttribute="leading" id="600-PT-Spe"/>
+                            <constraint firstItem="oAp-K2-w4S" firstAttribute="bottom" secondItem="FyW-Wf-Qyp" secondAttribute="bottom" id="FPG-cg-nGm"/>
+                            <constraint firstItem="oAp-K2-w4S" firstAttribute="trailing" secondItem="FyW-Wf-Qyp" secondAttribute="trailing" id="x40-rS-rde"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photosCollectionView" destination="FyW-Wf-Qyp" id="mlQ-uU-r7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="leI-L3-1dJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902" y="68"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XH4-AI-tOC">
             <objects>
@@ -83,6 +149,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

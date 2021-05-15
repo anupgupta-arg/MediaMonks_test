@@ -86,7 +86,6 @@ class TypicodeAPICall {
         }
     }
     
-    
     func getComments(postid: Int, isSuccess: @escaping (Bool, Comments?) -> ()) {
         let url = BASE_URL + COMMENTS + "/?postId=\(postid)";
         
@@ -125,6 +124,7 @@ class TypicodeAPICall {
             
         }
     }
+    
     
     func getAlbums(userid : Int, isSuccess: @escaping (Bool, Albums?) -> ()) {
         let url = BASE_URL + ALBUMS + "/?userId=\(userid)";
@@ -165,8 +165,8 @@ class TypicodeAPICall {
         }
     }
     
-    func getPhotos(isSuccess: @escaping (Bool, UsersPosts?) -> ()) {
-        let url = BASE_URL + POSTS;
+    func getPhotos(albumId : Int, isSuccess: @escaping (Bool, Photos?) -> ()) {
+        let url = BASE_URL + PHOTOS + "/?albumId=\(albumId)";
         
         let manager = Alamofire.Session.default
         manager.session.configuration.timeoutIntervalForRequest = 30.0
@@ -182,7 +182,7 @@ class TypicodeAPICall {
                     
                     do {
                         let decoder = JSONDecoder();
-                        let usersPost = try decoder.decode(UsersPosts.self, from: data);
+                        let usersPost = try decoder.decode(Photos.self, from: data);
                         // print("UsersPost >> ",usersPost);
                         isSuccess(true, usersPost)
                     }catch let error{
@@ -203,6 +203,7 @@ class TypicodeAPICall {
             
         }
     }
+    
     
     func getTodos(userid : Int, isSuccess: @escaping (Bool, Todos?) -> ()) {
         let url = BASE_URL + TODOS + "/?userId=\(userid)";

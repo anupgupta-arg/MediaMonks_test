@@ -26,7 +26,6 @@
 		7685252626493ED60001E0DC /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685252526493ED60001E0DC /* SideMenuVC.swift */; };
 		768525312649889F0001E0DC /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768525302649889F0001E0DC /* Users.storyboard */; };
 		76852534264988AE0001E0DC /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852533264988AE0001E0DC /* Todos.storyboard */; };
-		76852537264988BF0001E0DC /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76852536264988BF0001E0DC /* Photos.storyboard */; };
 		7685253D264989150001E0DC /* UsersPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7685253C264989150001E0DC /* UsersPosts.storyboard */; };
 		768525402649893D0001E0DC /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685253F2649893D0001E0DC /* UsersVC.swift */; };
 		768525432649896C0001E0DC /* TodosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768525422649896C0001E0DC /* TodosVC.swift */; };
@@ -43,6 +42,9 @@
 		76852573264C66850001E0DC /* TodosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852571264C66850001E0DC /* TodosCell.swift */; };
 		76852578264C6DB00001E0DC /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76852577264C6DB00001E0DC /* Todos.swift */; };
 		76E2B54E264F15DA007FE8E5 /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E2B54D264F15DA007FE8E5 /* Albums.storyboard */; };
+		76E2B557264F1900007FE8E5 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2B556264F1900007FE8E5 /* PhotosVC.swift */; };
+		76E2B55A264F1968007FE8E5 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2B559264F1968007FE8E5 /* Photos.swift */; };
+		76E2B55D265025AE007FE8E5 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2B55C265025AE007FE8E5 /* PhotosCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +69,6 @@
 		7685252526493ED60001E0DC /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		768525302649889F0001E0DC /* Users.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Users.storyboard; sourceTree = "<group>"; };
 		76852533264988AE0001E0DC /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
-		76852536264988BF0001E0DC /* Photos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photos.storyboard; sourceTree = "<group>"; };
 		7685253C264989150001E0DC /* UsersPosts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersPosts.storyboard; sourceTree = "<group>"; };
 		7685253F2649893D0001E0DC /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		768525422649896C0001E0DC /* TodosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodosVC.swift; path = /Users/anup/Desktop/workStation/interview/MediaMonks/MediaMonks/Todos/TodosVC.swift; sourceTree = "<absolute>"; };
@@ -84,6 +85,9 @@
 		76852571264C66850001E0DC /* TodosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosCell.swift; sourceTree = "<group>"; };
 		76852577264C6DB00001E0DC /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
 		76E2B54D264F15DA007FE8E5 /* Albums.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Albums.storyboard; sourceTree = "<group>"; };
+		76E2B556264F1900007FE8E5 /* PhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		76E2B559264F1968007FE8E5 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		76E2B55C265025AE007FE8E5 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		A3FB5723AE386EC00027E4F4 /* Pods-MediaMonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.debug.xcconfig"; sourceTree = "<group>"; };
 		C432A24557D3E6F8E5B97E38 /* Pods-MediaMonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonks.release.xcconfig"; path = "Target Support Files/Pods-MediaMonks/Pods-MediaMonks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +135,6 @@
 			children = (
 				7685252A264986360001E0DC /* UserPosts */,
 				7685252C2649864A0001E0DC /* Albums */,
-				7685252E264986980001E0DC /* Photos */,
 				7685252F264986A20001E0DC /* Todos */,
 				7685252D264986710001E0DC /* Users */,
 				7685251F26493E1D0001E0DC /* SideMenu */,
@@ -158,6 +161,7 @@
 				768525012648357A0001E0DC /* Albums.swift */,
 				768525502649C4920001E0DC /* Users.swift */,
 				76852577264C6DB00001E0DC /* Todos.swift */,
+				76E2B559264F1968007FE8E5 /* Photos.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -217,6 +221,8 @@
 			children = (
 				7685254526498B1B0001E0DC /* AlbumsVC.swift */,
 				76E2B54D264F15DA007FE8E5 /* Albums.storyboard */,
+				76E2B55C265025AE007FE8E5 /* PhotosCell.swift */,
+				76E2B556264F1900007FE8E5 /* PhotosVC.swift */,
 			);
 			path = Albums;
 			sourceTree = "<group>";
@@ -229,14 +235,6 @@
 				7685255A2649C9C80001E0DC /* UserDetailsVC.swift */,
 			);
 			path = Users;
-			sourceTree = "<group>";
-		};
-		7685252E264986980001E0DC /* Photos */ = {
-			isa = PBXGroup;
-			children = (
-				76852536264988BF0001E0DC /* Photos.storyboard */,
-			);
-			path = Photos;
 			sourceTree = "<group>";
 		};
 		7685252F264986A20001E0DC /* Todos */ = {
@@ -317,7 +315,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76852537264988BF0001E0DC /* Photos.storyboard in Resources */,
 				768524F026471B8A0001E0DC /* LaunchScreen.storyboard in Resources */,
 				768525312649889F0001E0DC /* Users.storyboard in Resources */,
 				76852534264988AE0001E0DC /* Todos.storyboard in Resources */,
@@ -389,6 +386,7 @@
 				7685252626493ED60001E0DC /* SideMenuVC.swift in Sources */,
 				7685255B2649C9C80001E0DC /* UserDetailsVC.swift in Sources */,
 				768524E826471B890001E0DC /* ViewController.swift in Sources */,
+				76E2B557264F1900007FE8E5 /* PhotosVC.swift in Sources */,
 				7685254626498B1B0001E0DC /* AlbumsVC.swift in Sources */,
 				76852511264875230001E0DC /* Extensions.swift in Sources */,
 				768525512649C4920001E0DC /* Users.swift in Sources */,
@@ -399,11 +397,13 @@
 				768525632649D5BD0001E0DC /* UsersPostsCell.swift in Sources */,
 				7685256E264C5D9A0001E0DC /* CommentsCell.swift in Sources */,
 				768525402649893D0001E0DC /* UsersVC.swift in Sources */,
+				76E2B55A264F1968007FE8E5 /* Photos.swift in Sources */,
 				76852515264875CE0001E0DC /* Toast.swift in Sources */,
 				76852573264C66850001E0DC /* TodosCell.swift in Sources */,
 				7685252226493E480001E0DC /* SideMenuTableViewCell.swift in Sources */,
 				76852506264866AA0001E0DC /* Constant.swift in Sources */,
 				76852578264C6DB00001E0DC /* Todos.swift in Sources */,
+				76E2B55D265025AE007FE8E5 /* PhotosCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
