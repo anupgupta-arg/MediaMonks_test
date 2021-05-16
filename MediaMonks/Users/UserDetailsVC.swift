@@ -37,7 +37,7 @@ class UserDetailsVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true);
     }
     
-    @IBAction func todosbuttonAction(_ sender: Any) {
+    @IBAction func todosButtonAction(_ sender: Any) {
         
         let storyBoard = UIStoryboard.init(name: "Todos", bundle: nil);
         let vc = storyBoard.instantiateViewController(identifier: "TodosVCID") as TodosVC
