@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B98DF66A093E1A227A28C97 /* Pods_MediaMonks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BAC1073C2E81CBDDF5757D /* Pods_MediaMonks.framework */; };
+		762A4AFE2650F8C4006E5C00 /* DetailsPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762A4AFD2650F8C4006E5C00 /* DetailsPhotosVC.swift */; };
 		768524E426471B890001E0DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768524E326471B890001E0DC /* AppDelegate.swift */; };
 		768524E626471B890001E0DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768524E526471B890001E0DC /* SceneDelegate.swift */; };
 		768524E826471B890001E0DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768524E726471B890001E0DC /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		62BAC1073C2E81CBDDF5757D /* Pods_MediaMonks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaMonks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762A4AFD2650F8C4006E5C00 /* DetailsPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotosVC.swift; sourceTree = "<group>"; };
 		768524E026471B890001E0DC /* MediaMonks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMonks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768524E326471B890001E0DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768524E526471B890001E0DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				76E2B54D264F15DA007FE8E5 /* Albums.storyboard */,
 				76E2B55C265025AE007FE8E5 /* PhotosCell.swift */,
 				76E2B556264F1900007FE8E5 /* PhotosVC.swift */,
+				762A4AFD2650F8C4006E5C00 /* DetailsPhotosVC.swift */,
 			);
 			path = Albums;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				76E2B557264F1900007FE8E5 /* PhotosVC.swift in Sources */,
 				7685254626498B1B0001E0DC /* AlbumsVC.swift in Sources */,
 				76852511264875230001E0DC /* Extensions.swift in Sources */,
+				762A4AFE2650F8C4006E5C00 /* DetailsPhotosVC.swift in Sources */,
 				768525512649C4920001E0DC /* Users.swift in Sources */,
 				76852567264C44990001E0DC /* Comments.swift in Sources */,
 				768524E426471B890001E0DC /* AppDelegate.swift in Sources */,
