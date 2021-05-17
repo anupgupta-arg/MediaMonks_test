@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AlbumsVC-->
+        <!--Albums-->
         <scene sceneID="LRI-y7-ge3">
             <objects>
                 <viewController storyboardIdentifier="AlbumsVCID" id="9O6-o5-Nn7" customClass="AlbumsVC" customModule="MediaMonks" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                             <constraint firstItem="1qK-yM-28w" firstAttribute="trailing" secondItem="Qpt-5X-BSl" secondAttribute="trailing" id="xaZ-dP-mxi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4QF-b0-H4Y"/>
+                    <navigationItem key="navigationItem" title="Albums" id="4QF-b0-H4Y"/>
                     <connections>
                         <outlet property="albumTable" destination="Qpt-5X-BSl" id="9oh-AG-7cl"/>
                     </connections>

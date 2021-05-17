@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CommentsVC: UIViewController {
 
@@ -79,6 +80,10 @@ extension CommentsVC : UITableViewDelegate, UITableViewDataSource {
 extension CommentsVC {
     
     fileprivate func getComments(id : Int){
+        guard NetworkReachabilityManager()!.isReachable else {
+            showAlert(title: NETWORK_ERROR_TITLE, message: NETWORK_ERROR_MESSAGE)
+            return
+        }
         showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
         apiCall.getComments(postid: id, isSuccess: { [self](isSuccess, commentsList) in

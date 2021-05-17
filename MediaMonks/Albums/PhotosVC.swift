@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import Alamofire
 
 class PhotosVC: UIViewController {
     
@@ -93,6 +94,10 @@ extension PhotosVC {
     
     fileprivate func getPhotos(){
         
+        guard NetworkReachabilityManager()!.isReachable else {
+            showAlert(title: NETWORK_ERROR_TITLE, message: NETWORK_ERROR_MESSAGE)
+            return
+        }
         showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
         apiCall.getPhotos(albumId : id!, isSuccess: { [self](isSuccess, photosList) in

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AlbumsVC: UIViewController {
 
@@ -17,7 +18,7 @@ class AlbumsVC: UIViewController {
         super.viewDidLoad()
         albumTable.dataSource = self;
         albumTable.delegate = self;
-        
+        albumTable.tableFooterView = UIView();
         getAlbums(id: id!);
     }
     
@@ -63,6 +64,10 @@ extension AlbumsVC {
 // API call
 extension AlbumsVC {
     fileprivate func getAlbums(id : Int){
+        guard NetworkReachabilityManager()!.isReachable else {
+            showAlert(title: NETWORK_ERROR_TITLE, message: NETWORK_ERROR_MESSAGE)
+            return
+        }
         showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
         apiCall.getAlbums(userid: id, isSuccess: { [self](isSuccess, albumList) in

@@ -27,4 +27,9 @@ let PHOTOS_LABEL   = "PHOTOS"
 let TODOS_LABEL    = "TODOS"
 let USERS_LABEL    = "USERS"
 
+// Message
+let NETWORK_ERROR_TITLE = "Network Error"
+let NETWORK_ERROR_MESSAGE = "Look like you are not connected with internet";
+
+
 

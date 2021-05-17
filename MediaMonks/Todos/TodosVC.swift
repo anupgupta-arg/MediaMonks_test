@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class TodosVC: UIViewController {
 
@@ -17,7 +18,7 @@ class TodosVC: UIViewController {
         todosTableView.delegate = self;
         todosTableView.dataSource = self;
         
-       
+        todosTableView.tableFooterView = UIView();
         getTods(id: id!);
         super.viewDidLoad()
 
@@ -54,6 +55,10 @@ extension TodosVC : UITableViewDelegate, UITableViewDataSource {
 extension TodosVC {
     
     fileprivate func getTods(id : Int){
+        guard NetworkReachabilityManager()!.isReachable else {
+            showAlert(title: NETWORK_ERROR_TITLE, message: NETWORK_ERROR_MESSAGE)
+            return
+        }
         showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
         apiCall.getTodos(userid: id ,isSuccess: { [self](isSuccess, todoList) in

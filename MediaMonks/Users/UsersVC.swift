@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class UsersVC: UIViewController {
 
@@ -68,20 +69,12 @@ extension UsersVC {
 // API call
 extension UsersVC {
     
-    
-    fileprivate func getPosts(id : Int){
-        let obj = TypicodeAPICall();
-        showToastAndDisableUserInteraction();
-        obj.getUserPosts(userid: id) { [self] (isSuccess, userPosts) in
-            hideToastAndEnableUserInteraction();
-            guard isSuccess && userPosts != nil else{
-                return
-            }
-        }
-        
-    }
-    
     fileprivate func getUsers(){
+        
+        guard NetworkReachabilityManager()!.isReachable else {
+            showAlert(title: "Network error", message: "Look like you are not connected with internet")
+            return
+        }
         showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
         apiCall.getUsers(isSuccess: { [self](isSuccess, userList) in

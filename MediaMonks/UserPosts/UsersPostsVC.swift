@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class UsersPostsVC: UIViewController {
 
@@ -75,6 +76,10 @@ extension UsersPostsVC {
 extension UsersPostsVC {
 
     fileprivate func getUsersPosts(){
+        guard NetworkReachabilityManager()!.isReachable else {
+            showAlert(title: NETWORK_ERROR_TITLE, message: NETWORK_ERROR_MESSAGE)
+            return
+        }
         showToastAndDisableUserInteraction();
         let apiCall = TypicodeAPICall();
         apiCall.getUserPosts(userid: id! ,isSuccess: { [self](isSuccess, usersPostsList) in
