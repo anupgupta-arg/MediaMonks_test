@@ -224,16 +224,29 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eXr-2d-M4S">
+                                <rect key="frame" x="0.0" y="315" width="414" height="547"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="NDx-Xn-SM3" id="4h3-al-hCr"/>
+                                    <outlet property="delegate" destination="NDx-Xn-SM3" id="Vfg-2A-gaY"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eRL-B1-gln"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eXr-2d-M4S" firstAttribute="leading" secondItem="eRL-B1-gln" secondAttribute="leading" id="MN7-zh-GI7"/>
+                            <constraint firstItem="eRL-B1-gln" firstAttribute="trailing" secondItem="eXr-2d-M4S" secondAttribute="trailing" id="b9s-YZ-LRA"/>
+                            <constraint firstItem="eXr-2d-M4S" firstAttribute="top" secondItem="zx6-aO-4Dd" secondAttribute="bottom" id="eNx-2e-ES6"/>
                             <constraint firstItem="zx6-aO-4Dd" firstAttribute="leading" secondItem="eRL-B1-gln" secondAttribute="leading" id="jwi-Vw-aMx"/>
                             <constraint firstItem="zx6-aO-4Dd" firstAttribute="top" secondItem="eRL-B1-gln" secondAttribute="top" id="moW-ni-Abt"/>
+                            <constraint firstItem="eRL-B1-gln" firstAttribute="bottom" secondItem="eXr-2d-M4S" secondAttribute="bottom" id="rmx-yN-dpT"/>
                             <constraint firstItem="zx6-aO-4Dd" firstAttribute="trailing" secondItem="eRL-B1-gln" secondAttribute="trailing" id="tIH-Im-rPN"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="userDetailsTable" destination="eXr-2d-M4S" id="mbu-DI-6nR"/>
                         <outlet property="userName" destination="lue-ab-haS" id="ug3-mM-P92"/>
                     </connections>
                 </viewController>
